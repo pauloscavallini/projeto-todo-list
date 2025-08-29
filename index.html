@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/img/logo.png" alt="Logo ToDo List" />
+    </header>
+    <main>
+        <!-- Formulario de Cadastro -->
+        <section>
+            <form id="formCadastroTarefa">
+                <input type="text" name="tarefa" required minlength="2" placeholder="Adicione uma nova tarefa" />
+
+                <button type="submit">
+                    Criar
+                    <img src="./assets/img/criar.png" alt="Icone de Criar Tarefa" />
+                </button>
+            </form>
+        </section>
+
+        <!-- Seção dos contadores -->
+        <section>
+            <div>
+                <p>Tarefas criadas</p>
+                <span id="numTarefas">12</span>
+            </div>
+
+            <div>
+                <p>Concluídas</p>
+                <span id="numConcluidas">10</span>
+            </div>
+
+            <div>
+                <input type="text" id="inputBusca" placeholder="Busque por Tarefas" />
+            </div>
+        </section>
+
+
+        <!-- Quando não tem nenhuma tarefa -->
+        <section id="semTarefas">
+            <img src="./assets/img/icone-sem-tarefa.png" alt="Icone quando não possui tarefas" />
+            <h3>Você ainda não tem tarefas cadastradas</h3>
+            <p>Crie tarefas e organize seus itens a fazer</p>
+        </section>
+
+        <!-- Quando TEM tarefa -->
+        <section id="listaTarefas">
+            <div>
+                <button title="Concluir Tarefa"></button>
+                <p>Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit.</p>
+                <button title="Excluir Tarefa">
+                    <img src="./assets/img/lixeira.png" alt="Icone Lixeira" />
+                </button>
+            </div>
+
+            <div class="done">
+                <button title="Concluir Tarefa"></button>
+                <p>Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit.</p>
+                <button title="Excluir Tarefa">
+                    <img src="./assets/img/lixeira.png" alt="Icone Lixeira" />
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
